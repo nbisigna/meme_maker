@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Nick, Nick Bisignano, Bisignano, Bisignano Media, Web Developer, Software Engineer, meme, meme maker, caption, meme caption maker, meme captioner, caption your memes, how to caption a meme"
+    />
+    <meta name="description" content="Quickly make a caption for a meme." />
+    <meta robots="index, follow" />
+    <meta name="author" content="Nick Bisignano" />
+    <title>Meme Maker</title>
+  </head>
+  <style>
+    body {
+      text-align: center;
+    }
+  </style>
+  <body>
+    <h1>Meme Maker</h1>
+    <br />
+    <canvas
+      id="canvas"
+      height="300"
+      width="300"
+      style="border: solid black 1px;"
+    ></canvas>
+    <img id="img" />
+    <br />
+    <hr />
+    <br />
+    Caption: <input type="text" onkeydown="caption(event)" />
+    <br />
+    <br />
+    Upload Picture: <input type="file" onchange="upload(event)" />
+    <br />
+    <br />
+    <button onclick="download()">Download</button>
+    <script src="index.js"></script>
+  </body>
+</html>
